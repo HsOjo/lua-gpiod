@@ -1,0 +1,31 @@
+# Docker ignore file for lua-gpiod
+
+# Git files
+.git
+.gitignore
+
+# Build artifacts
+*.so
+*.o
+*.a
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation (keep only essential files)
+# We keep README files as they're copied in Dockerfile
+
+# Test files (except the ones we need)
+test_*
+!test_basic.lua
+
+# Temporary files
+*.tmp
+*.log
